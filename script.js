@@ -166,9 +166,6 @@ drone.on("open", (error) => {
     console.log("Successfully joined room");
   });
 
-  // Put this code into the drone.on('open') block
-  // right after the room 'open' listener
-
   // List of currently online members, emitted once
   room.on("members", (m) => {
     members = m;
