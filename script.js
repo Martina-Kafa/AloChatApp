@@ -229,23 +229,6 @@ function createMessageElement(text, member) {
   el.className = "message";
   return el;
 }
-function createMessageElement(text, member) {
-  const { name, color } = member.clientData;
-  const el = document.createElement("div");
-  el.appendChild(document.createTextNode(text));
-  el.className = "message";
-  if (member.id === drone.clientId) {
-    el.classList.add("message--mine");
-  } else {
-    el.classList.add("message--theirs");
-  }
-  const avatar = document.createElement("div");
-  avatar.style.backgroundColor = color;
-  avatar.appendChild(document.createTextNode(name.charAt(0).toUpperCase()));
-  avatar.className = "avatar";
-  el.appendChild(avatar);
-  return el;
-}
 
 function updateMembersDOM() {
   DOM.membersCount.innerText = `Alooo! There are ${members.length} users in the room:`;
