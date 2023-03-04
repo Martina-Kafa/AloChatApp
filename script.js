@@ -215,7 +215,7 @@ function createMemberElement(member) {
 }
 
 function updateMembersDOM() {
-  DOM.membersCount.innerText = `Alooo! There are ${members.length} users in the room:`;
+  DOM.membersCount.innerText = `Welcome to Alooo! There are ${members.length} users in the room:`;
   DOM.membersList.innerHTML = "";
   members.forEach((member) =>
     DOM.membersList.appendChild(createMemberElement(member))
