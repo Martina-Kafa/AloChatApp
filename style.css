@@ -27,7 +27,8 @@ body {
     margin: 0 auto; 
     justify-content: center;
     text-align: center;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
+    border-radius: 15%;
   }
 
 
@@ -37,9 +38,6 @@ body {
     margin-bottom: 10px;
     /* background: linear-gradient(to left, rgb(43, 41, 43), rgb(139, 137, 137)); */
     background: transparent;
-  }
-
-  .messages {
     flex-shrink: 1;
     overflow-y: scroll;
     height: 300px;
