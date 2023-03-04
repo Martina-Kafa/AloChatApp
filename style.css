@@ -32,10 +32,15 @@ body {
     flex-shrink: 1;
     overflow: scroll;
     height: 300px;
+    display: flex;
+    flex-direction: column;
   }
 
   .message {
     padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
   }
   .message .member {
     display: inline-block;
@@ -73,5 +78,8 @@ body {
     transform:rotate(10deg);
     
   }
+
+
+  
 
   
