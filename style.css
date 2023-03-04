@@ -1,0 +1,77 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    width: 50%;
+    background: linear-gradient(to right, rgb(55, 55, 58), rgb(86, 75, 77));
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+
+  .members-count {
+    border: none;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+
+  .members-list,
+  .messages {
+    border: 5px solid black;
+    padding: 25px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, rgb(53, 39, 51), gray);
+    opacity: 0.4;
+  }
+
+  .messages {
+    flex-shrink: 1;
+    overflow: scroll;
+    height: 300px;
+  }
+
+  .message {
+    padding: 15px 0;
+  }
+  .message .member {
+    display: inline-block;
+  }
+
+  .member {
+    padding-right: 0px;
+    position: relative;
+  }
+
+  .message-form {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .message-form__input {
+    flex-grow: 1;
+    border: 5px solid black;
+    padding: 10px 15px;
+    font-size: 20px;
+    opacity: 0.5;
+  }
+  .message-form__button {
+    margin: 10px;
+    color: rgb(8, 8, 8);
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+  }
+
+  .message-form__button:hover {
+    color: rgb(223, 230, 220);
+    transform:rotate(10deg);
+    
+  }
+
+  
