@@ -185,7 +185,6 @@ drone.on("open", (error) => {
     updateMembersDOM();
   });
 
-  // Add this after 'member_leave' event
   room.on("data", (text, member) => {
     if (member) {
       addMessageToListDOM(text, member);
@@ -230,21 +229,6 @@ function createMessageElement(text, member) {
   return el;
 }
 
-function updateMembersDOM() {
-  DOM.membersCount.innerText = `Alooo! There are ${members.length} users in the room:`;
-  DOM.membersList.innerHTML = "";
-  members.forEach((member) =>
-    DOM.membersList.appendChild(createMemberElement(member))
-  );
-}
-
-function createMessageElement(text, member) {
-  const el = document.createElement("div");
-  el.appendChild(createMemberElement(member));
-  el.appendChild(document.createTextNode(text));
-  el.className = "message";
-  return el;
-}
 
 function addMessageToListDOM(text, member) {
   const el = DOM.messages;
